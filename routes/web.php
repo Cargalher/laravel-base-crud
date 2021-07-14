@@ -27,8 +27,8 @@ Route::get('/contacts', 'PageController@contacts')->name('contacts');
 
 
 Route::get('films', 'PostController@index')->name('films');
+Route::get('films/create', 'PostController@create')->name('films.create');
 Route::get('films/{film}', 'PostController@show')->name('films.show');
-Route::get('news/create', 'PostController@create')->name('films.create');
 Route::post('films', 'PostController@store')->name('films.store');
 Route::get('films/{film}/edit', 'PostController@edit')->name('films.edit');
 Route::put('films/{film}', 'PostController@update')->name('films.update');
