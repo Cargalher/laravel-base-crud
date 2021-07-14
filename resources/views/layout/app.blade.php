@@ -19,6 +19,7 @@
            
                  <ul>
                     <li><a href="{{ route('home') }}"><strong>Home</strong></a></li>
+                    <li><a href="{{ route('films') }}"><strong>Films</strong></a></li>
                     <li><a href="{{ route('about') }}"><strong>About</strong></a></li>
                     <li><a href="{{ route('contacts') }}"><strong>Contacts</strong></a></li>
                 </ul>

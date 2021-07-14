@@ -11,7 +11,7 @@ class PostController extends Controller
     public function index()
     {
         $films = Film::all();
-        ddd($films);
-        return view('news', compact('films'));
+        // ddd($films);
+        return view('films.index', compact('films'));
     }
 }
