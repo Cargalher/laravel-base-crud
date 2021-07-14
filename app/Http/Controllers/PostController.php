@@ -19,7 +19,8 @@ class PostController extends Controller
     public function show(Film $film)
     {
         // code
-        ddd($film);
+       
+        return view('films.show', compact('film'));
     }
     // show the form to create the resource
     public function create()

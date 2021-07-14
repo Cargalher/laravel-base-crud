@@ -3,21 +3,17 @@
 @section('title', 'Films Page')
 
 @section('content')
-<h1>Films Page</h1>
-<div class="films_container">
-    @foreach($films as $film)
-        <div class="description container">
-            <img src="{{$film->poster}}" alt="">
-            <h2>{{$film->title}}</h2>
-            
-                <!-- <p> {{$film->description}} </p> -->
+<div class="films">
+    <section class="container">
+            <div class="description container">
+                @foreach($films as $film)
+                    <div>
+                        <img src="{{$film->poster}}" alt="">
+                        <h2>{{$film->title}}</h2>
+                        <!-- <p> {{$film->description}} </p> -->
+                    </div>
+                @endforeach
             </div>
-             
-        </div>
-        </div>
-        
-    @endforeach
+    </section>
 </div>
-
-
 @endsection
