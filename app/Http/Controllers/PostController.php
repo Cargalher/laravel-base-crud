@@ -25,7 +25,7 @@ class PostController extends Controller
     // show the form to create the resource
     public function create()
     {
-        // code
+        return view('films.create');
     }
     // save records in the database
     public function store()
