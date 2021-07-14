@@ -6,11 +6,12 @@ use Illuminate\Http\Request;
 
 use App\Film;
 
-class FilmController extends Controller
+class PostController extends Controller
 {
     public function index()
     {
         $films = Film::all();
+        ddd($films);
         return view('news', compact('films'));
     }
 }
