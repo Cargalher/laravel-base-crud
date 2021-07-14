@@ -4,13 +4,20 @@
 
 @section('content')
 <h1>Films Page</h1>
+<div class="films_container">
+    @foreach($films as $film)
+        <div class="description container">
+            <img src="{{$film->poster}}" alt="">
+            <h2>{{$film->title}}</h2>
+            
+                <!-- <p> {{$film->description}} </p> -->
+            </div>
+             
+        </div>
+        </div>
+        
+    @endforeach
+</div>
 
-@foreach($films as $film)
-    <img src="{{$film->poster}}" alt="">
-    <h2>{{$film->title}}</h2>
-    <div class="description">
-       <p> {{$film->description}} </p> 
-    </div>
-@endforeach
 
 @endsection

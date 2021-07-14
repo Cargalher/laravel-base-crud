@@ -1,10 +1,45 @@
+#site_header {
+  background-color: #a2d0ec;
+}
+
+#site_main .films_container .description_container {
+  display: flex;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+.container {
+  width: 80%;
+  margin: auto;
+}
+
 body {
-  background-color: cadetblue;
+  background-color: #090925;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+img {
+  width: 250px;
+  height: 350px;
+}
+
+li {
+  list-style-type: none;
+  margin: 0 20px;
 }
 
