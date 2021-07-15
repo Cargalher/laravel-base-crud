@@ -30,7 +30,7 @@ class PostController extends Controller
         $film->description = $request->description;
         $film->poster = $request->poster;
         $film->save();
-        return redirect()->route('films.index');
+        return redirect()->route('films');
     }
     // show the single resource
     public function show(Film $film)
