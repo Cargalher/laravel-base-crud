@@ -13,8 +13,6 @@
     
 </div>
 
-<!-- <form action="{{route('films.destroy', $film->id)}}" method="post">
-@csrf
-@method('DELETE') -->
+
 
 @endsection
