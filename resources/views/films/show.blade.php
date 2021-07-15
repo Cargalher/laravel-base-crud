@@ -6,9 +6,9 @@
 <div class="container">
         
             <div class="post">
-                <h2>{{$film->title}}</h2>
+                <h1 class="display-1">{{$film->title}}</h1>
                 <img src="{{$film->poster}}" alt="">
-                <p> {{$film->description}} </p>
+                <p class="lead"> {{$film->description}} </p>
             </div>
     
 </div>

@@ -8,7 +8,8 @@
 <h1>Add a new Film</h1>
 
 
-<form action="" method="post">
+<form action="{{ route('films.store' )}}" method="POST">
+    @csrf
     <div class="form-group">
       <label for="title">Title</label>
       <input type="text" name="title" id="title" class="form-control" placeholder="Add title" aria-describedby="title">

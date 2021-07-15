@@ -15,22 +15,28 @@ class PostController extends Controller
         // ddd($films);
         return view('films.index', compact('films'));
     }
-    // show the single resource
-    public function show(Film $film)
-    {
-        // code
-       
-        return view('films.show', compact('film'));
-    }
+    
     // show the form to create the resource
     public function create()
     {
         return view('films.create');
     }
     // save records in the database
-    public function store()
+    public function store(Request $request)
+    {
+        ddd($request->all());
+        $film = new Film();
+        $film->title = $request->title;
+        $film->description = $request->description;
+        $film->poster= $request->poster;
+        $film->save();
+    }
+    // show the single resource
+    public function show(Film $film)
     {
         // code
+       
+        return view('films.show', compact('film'));
     }
     // Show a form to modify the resource
     public function edit($film)
