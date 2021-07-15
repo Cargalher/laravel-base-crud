@@ -45,12 +45,14 @@ class PostController extends Controller
        return view('films.edit', compact('film'));
     }
     // update the resource in the database
-    public function update(Request $request, Film $comic)
+    public function update(Request $request, Film $film)
     {
         
+        $film->update($request->all());
+        return redirect()->route('films.show', $film->id);
     }
     // remove the resource in the database
-    public function destroy($film)
+    public function delete($film)
     {
         // code
     }
