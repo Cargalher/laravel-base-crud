@@ -49,7 +49,7 @@ class PostController extends Controller
     {
         
         $film->update($request->all());
-        return redirect()->route('films.index');
+        return redirect()->route('films');
     }
     // remove the resource in the database
     public function destroy(Film $film)
