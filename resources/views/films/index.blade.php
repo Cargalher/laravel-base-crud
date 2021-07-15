@@ -3,17 +3,32 @@
 @section('title', 'Films Page')
 
 @section('content')
-<div class="films">
-    <section class="container">
-            <div class="description container">
-                @foreach($films as $film)
-                    <div>
-                        <img src="{{$film->poster}}" alt="">
-                        <h2>{{$film->title}}</h2>
-                        <!-- <p> {{$film->description}} </p> -->
-                    </div>
-                @endforeach
-            </div>
-    </section>
-</div>
+
+
+<table class="table container">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Poster</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach($films as $film)
+        <tr>
+            <td scope="row">{{$film->id}}</td>
+            <td><img src="{{$film->poster}}" alt=""></td>
+            <td>{{$film->title}}</td>
+            <td>{{$film->description}}</td>
+            <td>View | Edit | Delete</td>
+        </tr>
+        @endforeach
+        
+    </tbody>
+</table>
+
+
+
 @endsection
