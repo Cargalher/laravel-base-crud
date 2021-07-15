@@ -13,9 +13,8 @@
     
 </div>
 
-<form action="{{route('films.destroy', $film->id)}}" method="post">
+<!-- <form action="{{route('films.destroy', $film->id)}}" method="post">
 @csrf
-@method('DELETE')
-<button type="submit" class="btn btn-danger">Delete</button>
-</form>
+@method('DELETE') -->
+
 @endsection
