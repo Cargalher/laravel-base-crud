@@ -12,7 +12,7 @@
     @csrf
     <div class="form-group">
       <label for="title">Title</label>
-      <input type="text" name="title" id="title" class="form-control" placeholder="Add title" aria-describedby="title">
+      <input type="text" name="title" id="title" class="form-control" placeholder="Add title" aria-describedby="titleHelper">
       <small id="titleHelper" class="text-muted">Add Description here</small>
     </div>
 </form>
@@ -22,7 +22,7 @@
 </div>
 <div class="form-group">
   <label for="poster">Poster Image URL</label>
-  <input type="url" name="poster" id="poster" class="form-control" placeholder="type an url" aria-describedby="posterHelpId">
+  <input type="url" name="poster" id="poster" class="form-control" placeholder="type an url" aria-describedby="posterHelper">
   <small id="coverHelper" class="text-muted">Type the url for the Poster image</small>
 </div>
 

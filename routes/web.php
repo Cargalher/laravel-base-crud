@@ -34,4 +34,4 @@ Route::get('films/{film}/edit', 'PostController@edit')->name('films.edit');
 Route::put('films/{film}', 'PostController@update')->name('films.update');
 Route::delete('films/{film}', 'PostController@destroy')->name('films.delete');
 
-
+// Route::resource('films', PostController::class);
