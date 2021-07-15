@@ -22,7 +22,7 @@
             <td><img src="{{$film->poster}}" alt=""></td>
             <td>{{$film->title}}</td>
             <td>{{$film->description}}</td>
-            <td>View | Edit | Delete</td>
+            <td><a href="{{route('films.show', ['film'=> $film->id])}}">View</a> | Edit | Delete</td>
         </tr>
         @endforeach
         

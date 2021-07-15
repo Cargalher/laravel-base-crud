@@ -1,9 +1,9 @@
 #site_header {
-  background-color: #a2d0ec;
+  background-color: white;
 }
 
-#site_main .films_container .description_container {
-  display: flex;
+#site_main .table {
+  color: white;
 }
 
 * {
@@ -18,8 +18,8 @@
 }
 
 body {
-  background-color: #090925;
-  color: white;
+  background-color: #a2d0ec;
+  color: black;
 }
 
 a {
