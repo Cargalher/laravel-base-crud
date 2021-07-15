@@ -4,8 +4,9 @@
 
 @section('content')
 
-
+<a class="btn btn-primary fixed-bottom" href="{{route('films.create')}}" role="button">Create</a>
 <table class="table container">
+
     <thead>
         <tr>
             <th>ID</th>

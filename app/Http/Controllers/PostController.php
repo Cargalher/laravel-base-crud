@@ -24,12 +24,13 @@ class PostController extends Controller
     // save records in the database
     public function store(Request $request)
     {
-        ddd($request->all());
+        // ddd($request->all());
         $film = new Film();
         $film->title = $request->title;
         $film->description = $request->description;
-        $film->poster= $request->poster;
+        $film->poster = $request->poster;
         $film->save();
+        return redirect()->route('films.index');
     }
     // show the single resource
     public function show(Film $film)
