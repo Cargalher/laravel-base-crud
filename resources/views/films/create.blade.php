@@ -23,7 +23,7 @@
 <div class="form-group">
   <label for="poster">Poster Image URL</label>
   <input type="url" name="poster" id="poster" class="form-control" placeholder="type an url" aria-describedby="posterHelper">
-  <small id="coverHelper" class="text-muted">Type the url for the Poster image</small>
+  <small id="posterHelper" class="text-muted">Type the url for the Poster image</small>
 </div>
 
 <button type="submit" class="btn btn-primary">Submit</button>

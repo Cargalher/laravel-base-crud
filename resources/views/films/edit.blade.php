@@ -7,7 +7,7 @@
 <div class="container">
 <h1>Add a new Film</h1>
 
-
+<!-- ADD VALUE TO THE TAGS INPUT!!! -->
 <form action="{{ route('films.update', $film->id)}}" method="POST">
     @csrf
     @method('PUT')
@@ -28,7 +28,7 @@
 <div class="form-group">
   <label for="poster">Change Poster Image</label>
   <input type="url" name="poster" id="poster" class="form-control" placeholder="type an url" aria-describedby="posterHelper"value= "{{$film->poster}}">
-  <small id="coverHelper" class="text-muted">Type the url for the Poster image</small>
+  <small id="posterHelper" class="text-muted">Type the url for the Poster image</small>
 </div>
 
 <button type="submit" class="btn btn-primary">Submit</button>

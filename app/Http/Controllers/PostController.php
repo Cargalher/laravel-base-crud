@@ -52,7 +52,7 @@ class PostController extends Controller
         return redirect()->route('films.show', $film->id);
     }
     // remove the resource in the database
-    public function delete($film)
+    public function destroy(Film $film)
     {
         // code
     }
