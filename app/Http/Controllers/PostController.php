@@ -40,14 +40,14 @@ class PostController extends Controller
         return view('films.show', compact('film'));
     }
     // Show a form to modify the resource
-    public function edit($film)
+    public function edit(Film $film)
     {
-        // code
+       return view('films.edit', compact('film'));
     }
     // update the resource in the database
-    public function update($film)
+    public function update(Request $request, Film $comic)
     {
-        // code
+        
     }
     // remove the resource in the database
     public function destroy($film)
