@@ -9,6 +9,7 @@ class PageController extends Controller
  public function index()
  {
     return view('home');
+    
  }
  public function about()
  {
@@ -19,3 +20,5 @@ class PageController extends Controller
     return view('contacts');
  }
 }
+
+

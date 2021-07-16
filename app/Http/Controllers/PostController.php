@@ -8,6 +8,12 @@ use App\Film;
 
 class PostController extends Controller
 {
+    public function home()
+    {
+        $films = Film::all();
+        return view('home', compact('films'));
+       
+    }
     ////**********************************************************INDEX************ show all the resources
     public function index()
     {
@@ -70,4 +76,6 @@ class PostController extends Controller
         $film->delete();
         return redirect()->route('films');
     }
+    
+    
 }
