@@ -23,7 +23,7 @@
       </div>
       <div class="form-group">
         <h4>Current Image</h4>
-        <img src="{{$film->poster}}}" alt="">
+        <img src="{{$film->poster}}" alt="">
       </div>
       <div class="form-group">
         <label for="poster">Change Poster Image</label>

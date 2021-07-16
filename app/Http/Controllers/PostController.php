@@ -61,13 +61,13 @@ class PostController extends Controller
         ]);
         
        $film->update($validated);
-        return redirect()->route('films.index');
+        return redirect()->route('films');
         
     }
     ////**********************************************************DESTROY************ remove the resource in the database
     public function destroy(Film $film)
     {
         $film->delete();
-        return redirect()->route('films.index');
+        return redirect()->route('films');
     }
 }
