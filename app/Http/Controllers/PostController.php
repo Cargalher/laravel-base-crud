@@ -24,15 +24,19 @@ class PostController extends Controller
     ////**********************************************************STORE************ save records in the database
     public function store(Request $request)
     {
-       
+        // dd($request->all());
+        $validated =  $request->validate([
+            'title'=> 'required | min:2 | max:100',
+            'poster'=>'required',
+            'description'=>'required'
+           
+        ]);
+        // ddd($validated);
+        Film::create($validated);
+        return redirect()->route('films');
         
 
-        $film = new Film();
-        $film->title = $request->title;
-        $film->description = $request->description;
-        $film->poster = $request->poster;
-        $film->save();
-        return redirect()->route('films');
+        
     }
     ////**********************************************************SHOW************ show the single resource
     public function show(Film $film)
