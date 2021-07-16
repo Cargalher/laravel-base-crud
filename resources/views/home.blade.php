@@ -3,14 +3,20 @@
 @section('title', 'Home Page')
 
 @section('content')
-<h1>il mio content</h1>
-
-@foreach($films as $film)
-        <div>
+<div class="container">
+    @foreach($films as $film)
+        <div class="movie">
             
-           <img src="{{$film->poster}}" alt="">
-            <h1>{{$film->title}}</h1>
-            <p>{{$film->description}}</p>
+            <div class="info">
+                
+                <img src="{{$film->poster}}" alt="">
+                <div class="text">
+                    <h1>{{$film->title}}</h1>
+                    <p>  {{$film->description}}</p>
+                </div>
+            
+            </div>
+          
             
         </div>
         @endforeach
@@ -19,3 +25,5 @@
 
 
 @endsection
+</div>
+
