@@ -11,6 +11,8 @@
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
         integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Caveat:wght@500&family=Pacifico&family=Sacramento&display=swap" rel="stylesheet">
+
         <!-- bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
         <!-- CSS -->
@@ -19,8 +21,9 @@
     </head>
     <body>
     <header id="site_header">
-            <nav>
-           
+        
+            <nav class="container">
+                
                  <ul>
                     <li><a href="{{ route('home') }}"><strong>Home</strong></a></li>
                     <li><a href="{{ route('films') }}"><strong>Films</strong></a></li>
@@ -33,6 +36,7 @@
        </header>
        <main id="site_main">
            @yield('content')
+           
        </main>
        <footer id="site_footer"></footer>
     </body>

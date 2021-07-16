@@ -3,6 +3,8 @@
 @section('title', 'Contacts Page')
 
 @section('content')
-<h1>Contacts Page</h1>
 
+<div class="jumbotron">
+    
+</div>
 @endsection

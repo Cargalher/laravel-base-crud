@@ -1,7 +1,12 @@
 #site_header {
   background-color: white;
+  font-family: "Abril Fatface", cursive;
+  font-size: 20px;
 }
 
+#site_main {
+  background-color: #a2d0ec;
+}
 #site_main .table {
   color: white;
 }
@@ -18,7 +23,6 @@
 }
 
 body {
-  background-color: #a2d0ec;
   color: black;
 }
 
@@ -43,3 +47,31 @@ li {
   margin: 0 20px;
 }
 
+#site_main .jumbotron {
+  background-image: url("../img/home.jpg");
+  background-size: cover;
+  height: 1000px;
+}
+
+h1 {
+  font-family: "Abril Fatface", cursive;
+  color: white;
+  font-size: 5rem;
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+}
+
+.post {
+  padding-top: 70px;
+}
+.post .lead {
+  font-family: "Sacramento", cursive;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.delete {
+  text-align: center;
+  padding: 50px 0;
+}

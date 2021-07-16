@@ -8,7 +8,7 @@ use App\Film;
 
 class PostController extends Controller
 {
-    // show all the resources
+    ////**********************************************************INDEX************ show all the resources
     public function index()
     {
         $films = Film::all();
@@ -16,15 +16,17 @@ class PostController extends Controller
         return view('films.index', compact('films'));
     }
     
-    // show the form to create the resource
+    //**********************************************************CREATE************/ show the form to create the resource
     public function create()
     {
         return view('films.create');
     }
-    // save records in the database
+    ////**********************************************************STORE************ save records in the database
     public function store(Request $request)
     {
-        // ddd($request->all());
+       
+        
+
         $film = new Film();
         $film->title = $request->title;
         $film->description = $request->description;
@@ -32,26 +34,33 @@ class PostController extends Controller
         $film->save();
         return redirect()->route('films');
     }
-    // show the single resource
+    ////**********************************************************SHOW************ show the single resource
     public function show(Film $film)
     {
         // code
        
         return view('films.show', compact('film'));
     }
-    // Show a form to modify the resource
+    // //**********************************************************EDIT************Show a form to modify the resource
     public function edit(Film $film)
     {
        return view('films.edit', compact('film'));
     }
-    // update the resource in the database
+    // //**********************************************************UPDATE************update the resource in the database
     public function update(Request $request, Film $film)
     {
+       $validated =  $request->validate([
+            'title'=> 'required | min:5 | max:100',
+            'poster'=>'required',
+            'description'=>'required'
+           
+        ]);
         
-        $film->update($request->all());
-        return redirect()->route('films');
+       $film->update($validated);
+        return redirect()->route('films.index');
+        
     }
-    // remove the resource in the database
+    ////**********************************************************DESTROY************ remove the resource in the database
     public function destroy(Film $film)
     {
         $film->delete();
