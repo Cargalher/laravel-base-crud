@@ -20,8 +20,8 @@
         
     </head>
     <body>
-    <header id="site_header">
-        
+    <header id="site_header" class="jumbo_header">
+    
             <nav class="container">
                 
                  <ul>

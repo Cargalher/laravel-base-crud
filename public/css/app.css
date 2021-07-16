@@ -1,7 +1,11 @@
 #site_header {
-  background-color: white;
   font-family: "Abril Fatface", cursive;
   font-size: 20px;
+}
+#site_header .jumbo_header {
+  background-image: url("../img/pop.jpg");
+  background-size: cover;
+  height: 20px;
 }
 
 #site_main {
