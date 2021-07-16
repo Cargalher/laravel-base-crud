@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="container">
-  <h1>Add a new Film</h1>
+  <h1>Edit Film</h1>
 
   <!-- ADD VALUE TO THE TAGS INPUT!!! -->
   <form action="{{ route('films.update', $film->id)}}" method="POST">
