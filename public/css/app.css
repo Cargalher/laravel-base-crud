@@ -45,19 +45,22 @@ li {
   margin: 0 20px;
 }
 
+#site_main {
+  background-color: black;
+}
 #site_main .movie {
   padding: 20px;
 }
 #site_main .movie .info {
   display: flex;
   align-items: center;
-  border: 1px solid black;
+  border: 5px solid #6E1011;
   justify-content: space-between;
   background-color: black;
   color: white;
 }
 #site_main .movie .info img {
-  border: 5px solid #6E1011;
+  border-right: 5px solid #6E1011;
 }
 #site_main .movie .info .text {
   display: flex;
