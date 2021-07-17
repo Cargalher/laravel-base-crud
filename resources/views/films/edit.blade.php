@@ -40,7 +40,7 @@
 
       <div class="form-group">
         <h6>Current Image</h6>
-        <img src="{{$film->poster}}" alt="">
+        <img src="{{$film->poster}}" alt="" style="border:5px solid #6E1011">
       </div>
       <div class="form-group">
         <label for="poster">Change Poster Image</label>

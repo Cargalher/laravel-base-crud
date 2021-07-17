@@ -5,7 +5,7 @@
         // background-size: cover;
         // height: 150px;
     
-   background-color: black;
+   background-color: white;
     .movie{
         padding: 20px;
     
@@ -13,27 +13,20 @@
         display: flex;
         align-items: center;
         border: 5px solid $header_bg;
-        justify-content: space-between;
         background-color: black;
         color: white;
         img{
             border-right: 5px solid $header_bg;
         }
         .text{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            
             h1{
             border:none;
             
             color:white;
             font-size:40px;
             }
-            p{
-            font-size: 20px;
-            width: 44%;
-        
-            }
+            
         }
     }
         

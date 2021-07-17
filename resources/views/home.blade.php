@@ -8,15 +8,16 @@
 
     <div class="container">
         @foreach($films as $film)
-            <div class="movie">
+            
+            <a class="movie" href="{{route('films.show', ['film'=> $film->id])}}" style="color:white;">
                 <div class="info">
                     <img src="{{$film->poster}}" alt="">
                     <div class="text">
                         <h1>{{$film->title}}</h1>
-                        <p>  {{$film->description}}</p>
+                        
                     </div>
                 </div>  
-            </div>
+           </a>
         @endforeach
     </div>
 </div>

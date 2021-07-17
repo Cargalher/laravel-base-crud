@@ -3,6 +3,9 @@
   font-family: "Abril Fatface", cursive;
   font-size: 20px;
   height: 100px;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 #site_main .table {
@@ -18,10 +21,6 @@
 .container {
   width: 80%;
   margin: auto;
-}
-
-body {
-  color: black;
 }
 
 a {
@@ -46,7 +45,7 @@ li {
 }
 
 #site_main {
-  background-color: black;
+  background-color: white;
 }
 #site_main .movie {
   padding: 20px;
@@ -55,26 +54,16 @@ li {
   display: flex;
   align-items: center;
   border: 5px solid #6E1011;
-  justify-content: space-between;
   background-color: black;
   color: white;
 }
 #site_main .movie .info img {
   border-right: 5px solid #6E1011;
 }
-#site_main .movie .info .text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 #site_main .movie .info .text h1 {
   border: none;
   color: white;
   font-size: 40px;
-}
-#site_main .movie .info .text p {
-  font-size: 20px;
-  width: 44%;
 }
 
 h1 {
@@ -93,9 +82,22 @@ h1 {
   font-family: "Gentium Basic", serif;
   font-size: 30px;
   margin-top: 20px;
+  color: white;
+}
+.post img {
+  border: 5px solid #6E1011;
 }
 
 .delete {
   text-align: center;
   padding: 50px 0;
+}
+
+a {
+  color: white;
+  font-size: 21px;
+}
+
+h1 {
+  color: #6E1011;
 }

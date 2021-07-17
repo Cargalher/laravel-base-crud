@@ -24,9 +24,9 @@
             <td>{{$film->title}}</td>
             <td>{{$film->description}}</td>
             <td>
-                <a href="{{route('films.show', ['film'=> $film->id])}}" style="font-size: 14px;">View <i class="fas fa-film"></i></a>
-                <a href="{{route('films.edit', ['film'=> $film->id])}}" style="font-size: 14px;">Edit <i class="far fa-edit"></i></a>
-                <a href="{{route('films.delete', ['film'=> $film->id])}}" style="font-size: 14px;">Delete <i class="fas fa-trash-alt"></i></a>
+                <a href="{{route('films.show', ['film'=> $film->id])}}" style="font-size: 14px; color:white;">View <i class="fas fa-film"></i></a>
+                <a href="{{route('films.edit', ['film'=> $film->id])}}" style="font-size: 14px; color:white;">Edit <i class="far fa-edit"></i></a>
+                <a href="{{route('films.delete', ['film'=> $film->id])}}" style="font-size: 14px; color:white;">Delete <i class="fas fa-trash-alt"></i></a>
             </td>
         </tr>
         @endforeach
