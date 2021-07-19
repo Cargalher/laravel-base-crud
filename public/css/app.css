@@ -8,6 +8,9 @@
   text-transform: uppercase;
 }
 
+#site_main {
+  background-color: black;
+}
 #site_main .table {
   color: white;
 }
@@ -45,7 +48,7 @@ li {
 }
 
 #site_main {
-  background-color: white;
+  background-color: black;
 }
 #site_main .movie {
   padding: 20px;
